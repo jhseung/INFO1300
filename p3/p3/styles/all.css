@@ -16,6 +16,11 @@ a {
   color: black;
 }
 
+form p {
+  font-size: 11px;
+  font-style: italic;
+}
+
 .title {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 200;
@@ -25,6 +30,20 @@ a {
   margin-top: 50px;
   text-align: center;
   margin-right: 50px;
+}
+
+.input {
+  width: 300px !important;
+}
+
+.form_div {
+  text-align: right;
+  width: 400px;
+  margin: 0 auto;
+}
+
+textarea, input {
+  width: 300px;
 }
 
 nav ul {
@@ -209,7 +228,7 @@ nav li a:hover {
 
 .form {
   margin-left: 200px;
-  width: 70%;
+  width: 60%;
   text-align: center;
 }
 
@@ -234,4 +253,4 @@ nav li a:hover {
 
 #choices {
   width: 400px;
-} 
+}

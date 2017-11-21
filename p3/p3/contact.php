@@ -19,27 +19,36 @@
   Github: https://github.com/jhseung<br/>
   Reach out via email or phone for a quick chat or some coffee!</p><br/>
 
-  <form action="/handle_form" method="post" class="form">
-    <div>
+  <form action="temporary_confirmation_page.php" method="post" class="form">
+    <div class="form_div">
       <select id="choices">
-        <option value="You want to talk about my project!">You want to talk about my project!</option>
+        <option disabled selected value> Select an option </option>
+        <option value="You want to talk about my project!">You want to talk
+          about my project!</option>
         <option value="You want to hire me!">You want to hire me!</option>
-        <option value="You want to be my friend! :)">You want to be my friend! :)</option>
+        <option value="You want to be my friend! :)">You want to be my friend!
+          :)</option>
+        <option value="You want to drink coffee with me!">You want to drink
+          coffee with me!</option>
       </select>
     </div>
-    <div>
-      <label for="name">Name: </label>
-      <input type="text" id="name" name="user_name">
+    <div class="form_div">
+      <label for="name">* Name: </label>
+      <input type="text" id="name" name="user_name" placeholder="Ji Hwan Seung"
+      required class="input">
     </div>
-    <div>
-      <label for="mail">E-mail: </label>
-      <input type="email" id="mail" name="user_email">
+    <div class="form_div">
+      <label for="mail">* E-mail: </label>
+      <input type="email" id="mail" name="user_email"
+      placeholder="jiseung95@gmail.com" class="input" required>
     </div>
-    <div>
-      <label for="message">Message: </label>
-      <textarea id="message" name="user_message"></textarea>
+    <div class="form_div">
+      <label for="message">* Message: </label>
+      <textarea id="message" name="user_message" required class="input"
+      placeholder="What do you want to tell me? :)"></textarea>
     </div>
-      <button type="button" onclick="location.href='temporary_confirmation_page.php'" id="submit_button">Submit </button>
+      <button type="submit" id="submit_button">Submit </button>
+      <p>Fields marked with * are required</p>
   </form>
 
 
